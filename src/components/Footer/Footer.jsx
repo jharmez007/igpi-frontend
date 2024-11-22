@@ -58,6 +58,7 @@ const Footer = () => {
 
         if (response?.status === 201) {
           setIsSubmitted(true);
+          setErrorMessage(" ");
         } else {
           setErrorMessage(response?.message);
         }

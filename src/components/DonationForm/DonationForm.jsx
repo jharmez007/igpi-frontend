@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { initializePaymemt } from "../../services/paymentServices";
 import { PiWarningCircleThin } from "react-icons/pi";
 
