@@ -134,7 +134,7 @@ const SignUpForm = () => {
           const paymentResponse = await initializePaymemt({
             amount,
             email,
-            callback_url: "http://localhost:3000/home",
+            callback_url: "https://igpi-frontend.vercel.app/home",
           });
 
           if (paymentResponse?.status === 200) {
