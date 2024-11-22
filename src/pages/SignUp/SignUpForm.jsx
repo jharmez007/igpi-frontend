@@ -143,9 +143,13 @@ const SignUpForm = () => {
           } else {
             setErrorMessage(paymentResponse?.message);
           }
+        } else {
+          console.log('Volunteer registration complete');
+          alert('Registration successful!');
         }
       } else {
         setErrorMessage(userResponse?.message);
+        
       }
     } catch (error) {
       console.error("An error occurred:", error);
