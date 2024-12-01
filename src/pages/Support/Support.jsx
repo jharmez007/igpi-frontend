@@ -28,7 +28,7 @@ const Support = () => {
         <AnimatedSection id="supportSection">
           <div className="app__flex flex-col gap-3 md:gap-6">
             <h4 className="font-bold p__text text-4xl md:text-5xl text-center text-[#0b8b68]">Ways to Support Our Cause</h4>
-            <p className="text-center p__text">Make a Contribution</p>
+            <p className="text-center p__text text-xl">Make a Contribution</p>
           </div>
         </AnimatedSection>
       </div>

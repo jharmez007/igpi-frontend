@@ -15,7 +15,22 @@ const Team = () => {
 
       <div className="flex justify-center items-center flex-col w-full">
         {teamData.map((item, index) => (
-          <Excos name={item.name} role={item.role} text={item.text} number={item.number} email={item.email} facebook={item.facebook} twitter={item.twitter} linkedin={item.linkedin} imgUrl={item.imgUrl} className={item.className} key={item.name + index} />
+          <Excos 
+            name={item.name} 
+            role={item.role} 
+            text={item.text} 
+            number={item.number} 
+            email={item.email} 
+            emailLink={item.emailLink} 
+            facebook={item.facebook} 
+            facebookLink={item.facebookLink} 
+            twitter={item.twitter} 
+            twitterLink={item.twitterLink} 
+            linkedin={item.linkedin} 
+            linkedinLink={item.linkedinLink} 
+            imgUrl={item.imgUrl}  
+            className={item.className} 
+            key={item.name + index} />
         ))}
       </div>
     </div>

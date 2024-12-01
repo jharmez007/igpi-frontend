@@ -4,9 +4,8 @@ import { PiWarningCircleThin } from "react-icons/pi";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Select from "react-select";
 import * as yup from "yup";
-import axios from "axios";
 
-import { stateAndLGA } from "../../constants/dummy";
+import { stateAndLGA, countries } from "../../constants/dummy";
 import "./signupform.scss";
 import { initializePaymemt } from "../../services/paymentServices";
 import { registerUser } from "../../services/userServices";
@@ -81,17 +80,11 @@ const SignUpForm = () => {
     setStates(mappedStates);
 
     // Fetch Nationalities
-    axios
-      .get("https://restcountries.com/v3.1/all")
-      .then((response) => {
-        setNationalities(
-          response.data.map((country) => ({
-            label: country.name.common,
-            value: country.name.common,
-          }))
-        );
-      })
-      .catch((error) => console.error("Error fetching nationalities:", error));
+     const mappedCountries = countries.map((country) => ({
+      label: country,
+      value: country,
+    }));
+    setNationalities(mappedCountries);
   }, []);
 
   const handleStateChange = (selectedState) => {

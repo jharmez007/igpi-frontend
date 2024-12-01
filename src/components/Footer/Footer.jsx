@@ -80,9 +80,7 @@ const Footer = () => {
               INCLUSIVE GROWTH AND PROSPERITY INITIATIVE
             </h3>
             <p className="leading-7">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              optio non, commodi nisi adipisci alias quos exercitationem
-              dolorum. Magni, delectus?
+              Subscribe to our newsletter and be the first to receive updates, exclusive offers, and the latest news. Join our community today!
             </p>
             <div className="leading-6 flex flex-col gap-3">
               <p>

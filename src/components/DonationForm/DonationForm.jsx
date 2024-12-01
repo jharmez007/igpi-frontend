@@ -84,45 +84,6 @@ const DonationForm = () => {
     }
   };
 
-  //   setLoading(true);
-  // const url = `https://3e965510-5f4c-4a2b-8cc7-7bc0346b9c58-00-1qtyq3ehnf2x4.riker.replit.dev/paystack?amount=${amount}&email=${email}`;
-  //   await axios.get( url, {
-  //     headers:{
-  //       'X-Requested-With':'XMLHttpRequest'
-  //     }
-  //   }).then(response => {
-  //     let data = response.data
-  //     console.log(data.data.authorization_url)
-  //     window.location.href = data.data.authorization_url
-  //     return null
-
-  //   }).catch(function(error){
-  //     console.log(error)
-  //     setErrorMessage('An error occurred. Please try again.');
-  //     setLoading(false);
-  //   })
-
-  //   try {
-  //     const response = await fetch(url, {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({
-  //         email,
-  //         amount,
-  //       }),
-  //     });
-
-  //     const data = await response.json();
-  //     if (data.status) {
-  //       window.location.href = data.data.authorization_url;
-  //     } else {
-  //       setErrorMessage('Payment initialization failed.');
-  //     }
-  //   } catch (error) {
-  //     setErrorMessage('An error occurred. Please try again.');
-  //   } finally {
-  //     setLoading(false);
-  //   }
 
   return (
     <div id="donate1" className="donation-form w-full">
