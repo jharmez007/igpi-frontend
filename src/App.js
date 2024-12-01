@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() => {
     const wakeUpServer = async () => {
       try {
-        const response = await wakeServer({url: 'http://localhost:3000'});
+        const response = await wakeServer({url: 'https://igpi-frontend.vercel.app/'});
         if (response?.status === 200) {
           console.log(response.data);
         } else {
