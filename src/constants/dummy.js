@@ -4,6 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { images } from '../constants/index';
 
 
+
 export const links = [
     {
         name: 'About Us',
@@ -21,34 +22,46 @@ export const links = [
         name: 'Contact',
         link: 'contact',
     },
+    {
+        name: 'Blog',
+        link: 'blog',
+    },
 ];
 
 export const socials = [
-    {
+    {   
+        platform: 'twitter',
         icon: <FaXTwitter />,
         link: 'https://x.com/IGPI4ALL?s=09',
     },
     {
+        platform: 'facebook',
         icon: <FaFacebookF />,
         link: 'https://www.facebook.com/profile.php?id=61565726552235&mibextid=ZbWKwL',
     },
     {
+        platform: 'linkedin',
         icon: <FaLinkedin />,
         link: 'https://www.linkedin.com/in/inclusive-growth-prosperity-initiative-a3315132b',
     },
     {
+        platform: 'instagram',
         icon: <FaInstagram />,
         link: 'https://www.instagram.com/igpi4all',
     },
     {
+        platform: 'tiktok',
         icon: <FaTiktok />,
         link: 'https://www.tiktok.com/@igpi4all?_t=8penjOB9fDK&_r=1',
     },
     {
+        platform: 'youtube',
         icon: <FaYoutube />,
         link: 'https://youtube.com/@inclusivegrowthandprosperityin?si=wJa53eMA3_gdIrPZ',
     },
 ];
+
+
 
 export const objectives = [
     {

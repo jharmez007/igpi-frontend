@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { ScrollToTop } from './hooks';
-import { Navbar, Footer } from './components';
-import { AboutUs, Contact, Home, SignUpForm, Support, Team } from './pages';
+import { Navbar, Footer, PostDetails } from './components';
+import { AboutUs, Contact, Home, SignUpForm, Support, Team, Blog } from './pages';
 import { wakeServer } from './services/wakeServices';
 import './App.scss';
 
@@ -49,6 +49,8 @@ const App = () => {
           <Route path="/team" element={<MainLayout><Team /></MainLayout>} />
           <Route path="/support" element={<MainLayout><Support /></MainLayout>} />
           <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+          <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />
+          <Route path="/post/:id" element={<MainLayout><PostDetails /></MainLayout>} />
 
           {/* Route without Navbar and Footer */}
           <Route path="/signupform" element={<SignUpForm />} />

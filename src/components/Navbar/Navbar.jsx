@@ -9,11 +9,9 @@ import "./navbar.scss";
 import { getAllContacts } from "../../services/contactServices";
 
 const activeLink = "p__text text-zinc-500 font-bold";
-const normalLink =
-  "p__text text-black hover:text-zinc-500 ease-in duration-300 font-bold";
+const normalLink = "p__text text-black hover:text-zinc-500 ease-in duration-300 font-bold";
 const menuActiveLink = "p__text text-[#fcbe27] font-bold";
-const menuLink =
-  "p__text text-black hover:text-[#fcbe27] ease-in duration-300 font-bold";
+const menuLink = "p__text text-black hover:text-[#fcbe27] ease-in duration-300 font-bold";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
