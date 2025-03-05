@@ -116,14 +116,16 @@ const Home = () => {
       <AnimatedSection id="blogSection">
         <div className="app__flex min-h-[80vh] px-6 md:px-24 lg:px-32 xl:px-[200px] 2xl:px-[400px] py-24 bg-white text-black">
           <div className="flex items-center justify-center flex-col w-full gap-16 md:gap-20">
-            <div className="text-center">
-              <h4 className="font-bold p2__text text-4xl text-[#0b8b68]">THE BLOG</h4>
-              <h2 className="font-bold p2__text text-6xl md:text-7xl">NEWS & UPDATES</h2>
-            </div>
-            {/* <div className="app__flex flex-col border  w-[100%] max-w-[1200px] px-6 py-60 text-center p__text">
-              <h3 className="font-extrabold text-3xl">Check back soon</h3>
-              <p>Once posts are published, you'll see them here.</p>
-            </div>  */}
+          <div className="text-center">
+            <h4 className="font-bold p2__text text-4xl text-[#0b8b68]">THE BLOG</h4>
+            <h2 className="font-bold p2__text text-6xl md:text-7xl">NEWS & UPDATES</h2>
+          </div>
+          {sortedPost.length < 0 ? (
+              <div className="app__flex flex-col border  w-[100%] max-w-[1200px] px-6 py-60 text-center p__text">
+                <h3 className="font-extrabold text-3xl">Check back soon</h3>
+                <p>Once posts are published, you'll see them here.</p>
+              </div>
+          ) : (
             <div className="flex flex-row w-full text-white">
                 <div className='news-column left float-left w-full lg:w-[33.333%] flex flex-col gap-8 lg:gap-0'>
                   <Link 
@@ -313,6 +315,9 @@ const Home = () => {
                   </Link>
                 </div>
             </div>
+          )}
+             
+            
             <Link to="/blog" className="bg-[#fcbe27] text-white text-sm md:text-lg py-2 px-6 md:py-4 md:px-9 rounded-md font-bold hover:bg-[#fcc027ce] ease-in duration-300">SEE MORE ON THE BLOG</Link>
           </div>
         </div>
